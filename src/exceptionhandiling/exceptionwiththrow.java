@@ -6,7 +6,10 @@ class  nonexception extends Exception{
 }
 
 public class exceptionwiththrow {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws nonexception
+    {
         nonexception eqq= new nonexception("my exception");
+        throw eqq;
+
     }
 }
